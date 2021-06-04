@@ -1,0 +1,14 @@
+Na tabela do banco de dados, cada Enum representa um número.
+
+INTERN: 0
+ADMIN : 1
+MANAGER: 2
+HUMAN_RESOURCES: 3
+
+---------------------------------
+Recomendação:                   |
+sempre que fizer um novo enum,  |
+coloque aqui o mapamento,       |
+dessa forma fica mais fácil     |
+quando for documentar           |
+---------------------------------
