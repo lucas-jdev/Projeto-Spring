@@ -14,10 +14,4 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long>{
     
     @Query(value = "select em from Employee em where upper(trim(em.name)) like %?1%")
     List<Employee> findByName(String name);
-
-    @Query(value = "select * from Employee * where *.office like %?1%")
-    List<Employee> findByOffice(Office office);
-
-    @Query(value = "select * from Employee * where *.office like %")
-    List<Employee> findBySalary(Float salary);
 }
